@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="justify-content-center">
+        <h4>Drop Image to get Infos</h4>
+    </div>
+
+    {{dropzone.create(action="upload") }}
+    {{dropzone.load_js()}}
+    {{dropzone.config()}}
+{% endblock %}
